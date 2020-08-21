@@ -13,7 +13,7 @@ $(function () {
         });
     })
 })
-//获取信息
+//获取用户信息
 function getUserInfo() {
     $.ajax({
         url: '/my/userinfo',
@@ -42,3 +42,5 @@ function renderAvatar(user) {
         $('.user-avatar').show().html(text);
     }
 }
+// getUserInfo()和renderAvatar(user)
+// 必须是全局变量 因为后面要调用
